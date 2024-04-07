@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "myewpractice",
+	"version": "${version}",
+	"name": "MyewPractice",
+	"description": "Myewphis practice mod for learning how to mod",
+	"authors": [
+		"Myewphi"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/myewpractice/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.myewphi.myewpractice.MyewPractice"
+		],
+		"client": [
+			"net.myewphi.myewpractice.MyewPracticeClient"
+		],
+		"fabric-datagen": [
+			"net.myewphi.myewpractice.MyewPracticeDataGenerator"
+		]
+	},
+	"mixins": [
+		"myewpractice.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
